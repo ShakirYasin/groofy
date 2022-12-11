@@ -43,4 +43,7 @@ a {
 
 @media (prefers-color-scheme: dark) {
   body { color: #000 !important; background: #FFF !important; }
+  .next-error-h1 {
+    border-right: 1px solid rgba(255, 255, 255, .3);
+  }
 }
