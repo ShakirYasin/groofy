@@ -75,6 +75,16 @@ const Upload = () => {
         }
     }
 
+    const discard = () => {
+        setIsLoading(false)
+        setWrongFileType(false)
+        setCaption("")
+        setCategory("")
+        setSavingPost(false)
+        setVideoAsset(undefined)
+        router.push('/')
+    }
+
     return (
         <div className='flex w-full h-full absolute left-0 top-[60px] mb-10 pt-10 lg:pt-20 bg-[#F8F8F8] justify-center'>
             <div className='bg-white rounded-lg xl:h-[80vh] w-[60%] flex gap-6 flex-wrap xl:justify-between justify-center items-center p-14 pt-6'>
@@ -162,7 +172,7 @@ const Upload = () => {
                         <div className='flex gap-6 mt-10'>
                             <button
                                 type="button"
-                                onClick={() => {}}
+                                onClick={discard}
                                 className="border-gray-300 border-2 text-md font-medium p-2 rounded w-28 lg:w-44 outline-none"
                             >
                                 Discard
