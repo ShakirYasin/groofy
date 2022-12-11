@@ -59,6 +59,7 @@ const VideoCard:NextPage<IProps> = ({post}) => {
                     <p className='capitalize font-medium text-xs text-gray-500'>{date}</p>
                 </div>
             </div>
+            <p className='lg:ml-20 mb-4 font-normal italic text-md text-gray-500'>{post.caption}</p>
         </div>
         <div className='lg:ml-20 flex gap-4'>
             <div 
