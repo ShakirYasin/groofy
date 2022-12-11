@@ -39,3 +39,11 @@ a {
   background: #F51997 !important;
   height: 5px !important
 }
+
+
+@media (prefers-color-scheme: dark) {
+  body { color: #fff; background: #FFF; }
+  .next-error-h1 {
+    border-right: 1px solid rgba(255, 255, 255, .3);
+  }
+}
