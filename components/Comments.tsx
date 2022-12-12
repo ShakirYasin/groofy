@@ -35,7 +35,7 @@ const Comments = ({isPostingComment, comment, setComment, addComment, comments}:
               {allUsers.map((user: IUser) => (
                 user._id === (item.postedBy._id || item.postedBy._ref) && (
                   <div className='p-2 items-center' key={i}>
-                    <UserInfo user={user} />
+                    <UserInfo user={user} isAcomment />
                     <div className='mx-10 mt-2 p-2 px-4 bg-gray-200 rounded-lg'>
                       <p>{item.comment}</p>
                     </div>
